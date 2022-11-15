@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title> MA ULUDAG | CV</title>
+</head>
+<body>
+
+    <style>
+        .selected{
+            color: black;
+        }
+
+        .act{
+            color: rgb(0, 110, 255);
+        }
+
+        .notselected{
+            color: rgb(32, 32, 32);
+        }
+
+        .icon{
+            color: rgb(85, 85, 85);
+            cursor: pointer;
+            margin: 1%;
+            text-decoration: none;
+        }
+
+        .icon:hover{
+            color: rgb(0, 110, 255);
+        }
+
+
+        .name {
+            letter-spacing: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            animation-name: name-animation;
+            animation-duration: 6s;
+            }
+
+        @keyframes name-animation {
+            from {letter-spacing: 10px; font-size: large;}
+            to {letter-spacing: 1px; font-size: medium;}
+        }
+    </style>
+        
+        <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">MERT ALİ ULUDAĞ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" id="navjsonclick" style="--bs-scroll-height: 150px;">
+                <li class="nav-item">
+                <a class="nav-link disabled" aria-current="page" href="articles">ARTICLES</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link act" href="cv.html">CV</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="portfolio.html" role="button" aria-expanded="false">
+                    PORTFOLIO
+                </a>
+                </li>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+        <br>
+        <center>
+            <div class="alert alert-light" role="alert">
+                <div>
+                    <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEdaYLS9O_4jg/profile-displayphoto-shrink_800_800/0/1616504561008?e=1674086400&v=beta&t=dSbPAX8-xFGz1qcBCbTIF-G9DC7iYiPP32hi149MjH4" alt="mert ali uludağ" style="border-radius: 25%; width: 50%; max-width: 300px; box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.185)">
+                    <br> <div style="height: 50px;"> <br>
+                        <p class="name">MERT ALİ ULUDAĞ</p>
+                    </div>
+                </div>
+                <br>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist" style="width: 50%;">
+                      <button class="nav-link notselected active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-personal" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Personal&Contacts</button>
+                      <button class="nav-link notselected" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-experience" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Experiences</button>
+                      <button class="nav-link notselected" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-skills" type="button" role="tab" aria-controls="nav-skills" aria-selected="false">Skills</button>
+                      <button class="nav-link notselected" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-edu" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Education</button>
+                      <button class="nav-link notselected" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-courses" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Courses</button>
+                      <button class="nav-link notselected" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-hobies" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Hobies</button>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-personal" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <br>
+                        <i class="bi bi-geo-alt-fill"></i> Istanbul/Turkey <br> <br>
+                        <i class="bi bi-geo-alt-fill"></i> Nicosia/Cyprus <br>
+                        <br>
+                        Birth Year: 1999 · Istanbul <br><br>
+                        <a href="mailto:mertaliuludag@gmail.com" class="icon">mertaliuludag@gmail.com</a> <br><br>
+                        <a href="https://www.linkedin.com/in/mert-ali-uludag/" style="text-decoration: none;"><i class="bi bi-linkedin icon"> Linkedin</i></a>  <a href="https://github.com/merttali" style="text-decoration: none;"><i class="bi bi-github icon"> Github</i></a>
+                    </div>
+                    <div class="tab-pane fade" id="nav-experience" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <br>
+                        <a href="https://neareasttechnology.com/"><img src="https://neareasttechnology.com/templates/neareasttechnology/imgs/header-logo.svg" alt="Near East Technology" style="width: 10%;"></a> <br>
+                        <br>INFORMATION TECHNOLOGY BUSINESS ANALYST <br>
+                        March 2022 - Present · Nicosia, Cyprus <br><br>
+                        <p style="text-align: justify; width: 50%; word-wrap: break-word;">
+                            * UI design creation by Whimsical and Miro. (I'm designing a User Interface that can be built using Bootstrap.) 
+                            <br>* Analysing customer requirements and writing the analysis documents. 
+                            <br>* Writing test scenarios. 
+                            <br>* UX testing. 
+                            <br>* Creating workflows. 
+                            <br>* Managing customer realities. 
+                            <br>* Supporting users. 
+                            <br>* Writing user guides for applications. 
+                            <br>
+                            <br>Projects: 
+                            <br>
+                            <br>NETPOS Stock Inventory System 
+                            <br>Client: Near East Schools 
+                            <br>
+                            <br>MINIMUS 
+                            <br>Client: Near East Schools 
+                            <br>
+                            <br>Electronic Documentation Management System 
+                            <br>Client: Near East Group Companies
+                        </p><br>
+                        <br>
+                        <a href="https://www.dip.com.tr/"><img src="https://www.dip.com.tr/wp-content/uploads/2018/11/dip_logo_veriambari.png" alt="Near East Technology" style="width: 10%;"></a> <br>
+                        <br>INFORMATION TECHNOLOGY BUSINESS ANALYST INTERN<br>
+                        July 2021 - March 2022 · Istanbul, Turkey <br><br>
+                        <p style="text-align: justify; width: 50%; word-wrap: break-word;">
+                            * Designing the User Interface.
+                            <br>* Analysing customer requirements and writing the analysis documents.
+                            <br>* Writing test scenarios.
+                            <br>* UX testing.
+                            <br>* Creating workflows.
+                            <br>* Managing customer relations.
+                            <br>* Supporting users.
+                            <br>* Writing user guides for applications.
+                            <br>
+                            <br>Projects:
+                            <br>
+                            <br>User Experience Database Project
+                            <br>Client: Turkish Airlines
+                            <br>
+                            <br>The Central Bank of the Republic of Turkey Periodic Report Submission Project
+                            <br>Client: Türkiye Finance Participation Bank
+                            <br>
+                            <br>Insurance Information and Monitoring Center Periodic Report Submission Project
+                            <br>Client: Bupa Acıbadem Insurance
+                        </p><br>
+                        <a href="https://www.vakifbank.com.tr/"><img src="https://www.vakifbank.com.tr/img/logo.png" alt="Near East Technology" style="width: 10%;"></a> <br>
+                        <br>INTERN<br>
+                        Agust 2019 - September 2019 · Istanbul, Turkey <br><br>
+                        
+                    </div>
+                    <div class="tab-pane fade" id="nav-skills" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <br>
+                        <div style="width: 50%;">
+                            <ul style="width: 25%; text-align: left; float: left;">
+                                <li>SQL</li>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                            <ul style="width: 25%; text-align: left; float: right;">
+                                <li>Whimsical</li>
+                                <li>Miro</li>
+                                <li>MS Office</li>
+                                <li>Canva</li>
+                                <li>Adobe Illustrator</li>
+                                <li>Flowgorithm</li>
+                            </ul> 
+                        </div>
+                        <br>
+                        
+                        
+                    </div>
+                    <div class="tab-pane fade" id="nav-edu" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <br><br>
+                        <a style="background-color: rgb(51, 51, 51); padding: 2%; border-radius: 5px;" href="https://www.anadolu.edu.tr/en"><img src="https://www.anadolu.edu.tr/assets/img/headerLogoWhite_tr.png" alt="Near East Technology" style="width: 10%;"></a> <br>
+                        <br>Anatolian University<br>
+                        <br> Computer Programming <br>
+                        2022 - Present · Remote<br><br>
+                        <br>
+                        <a href="https://www.ogu.edu.tr/"><img src="https://www.ogu.edu.tr/Content/2019/img/site-logo-outlined.png" alt="Near East Technology" style="width: 10%;"></a> <br>
+                        Eskisehir Osmangazi University<br>
+                        <br> Economics <br>
+                        2017 - 2021 · Eskisehir, Turkey<br><br>
+                        Student Clubs
+                        <br>
+                        *Business And Economics Club (Board Member) <br>
+                        *AKUT Club <br>
+                        *Scout Club <br>
+
+                        <br>
+                        
+                        
+                        
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-courses" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <br><br>
+                        <ul style="width: 50%; text-align: left;">
+                            <li>Big Data And Business Analysing, 3 Monts,(KUGIM)</li>
+                            <li>Developing Algorithms (Udemy)</li>
+                            <li>SWOT Analysing (ESOGU Business and Economics Club)</li>
+                            <li>Business Healty And Security (IIENSTITU)</li>
+                            <li>Project Writing (Eskisehir Youth Center)</li>
+                        </ul>
+
+                        <br>
+                    </div>
+                    <div class="tab-pane fade" id="nav-hobies" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <br><br>
+                        <ul style="width: 50%; text-align: left;">
+                            <li>Guitar</li>
+                            <li>Cycling</li>
+                            <li>Camping and Trekking</li>
+                            <li>Drawing</li>
+                        </ul>
+
+                        <br>
+                    </div>
+            </div>
+        </center>
+    </body>
+    </html>
+</body>
+</html>
