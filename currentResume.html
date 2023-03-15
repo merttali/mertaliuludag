@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mert Ali Uludağ</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <style>
+        .selected{
+            color: black;
+        }
+
+        .act{
+            color: rgb(0, 110, 255);
+        }
+
+        .notselected{
+            color: rgb(32, 32, 32);
+        }
+
+        .icon{
+            color: rgb(85, 85, 85);
+            cursor: pointer;
+            margin: 1%;
+            text-decoration: none;
+        }
+
+        .icon:hover{
+            color: rgb(0, 110, 255);
+        }
+
+
+        .name {
+            letter-spacing: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            animation-name: name-animation;
+            animation-duration: 6s;
+            }
+
+        @keyframes name-animation {
+            from {letter-spacing: 10px; font-size: large;}
+            to {letter-spacing: 1px; font-size: medium;}
+        }
+    </style>
+
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">MERT ALİ ULUDAĞ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 150px;">
+            <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="articles.html">ARTICLES</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="cv.html">CV</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="portfolio.html" role="button" aria-expanded="false">
+                PORTFOLIO
+            </a>
+            </li>
+            <a class="nav-link act" href="#" role="button" aria-expanded="false">
+                CURRENT CV
+            </a>
+        </ul>
+        </div>
+    </div>
+    </nav>
+    <div style="margin: 43vh 45vh 45vh 45vw;">
+        <button style="margin-right: 10px; margin-bottom: 10px; font-size: x-large; padding: 5px; font-weight: bold; border-radius: 5px; width: 100px;"><a style="text-decoration: none; color: rgba(0, 0, 0, 0.7); border-radius: 20%;" href="mert_ali_uludağ-CV_TR.pdf">Türkçe CV</a></button>
+        <button style="font-size: x-large; padding: 5px; font-weight: bold; border-radius: 5px; width: 100px;"><a style="text-decoration: none; color: rgba(0, 0, 0, 0.7);" href="mert_ali_uludag-CV_EN.pdf">English CV</a></button>
+    </div>
+</body>
+</html>
