@@ -16,11 +16,45 @@
     .name{letter-spacing:1px;font-family:Arial;font-size:medium;animation:name-animation 6s;}
     @keyframes name-animation{from{letter-spacing:10px;font-size:large;}to{letter-spacing:1px;font-size:medium;}}
 </style>
-<nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">MERT ALİ ULUDAĞ</a>
-    </div>
-</nav>
+        <nav class="navbar navbar-dark bg-warning fixed-top" style="background-color: rgba(0, 0, 0, 0.397) !important; margin-bottom: 15%;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="homePageEN.html"><img src="images/mauLogo.png" width="10%" height="10%" alt="">
+                </a> <br>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: rgba(0, 0, 0, 0.5) !important;">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: white;"></h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link active" aria-current="page">Language:<img src="images/ingilizce.png" width="50" style="margin-top: -5px;" alt=""></a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown" style="background-color: rgba(255, 255, 255, 0.7);">
+                                        <a class="dropdown-item" href="index.html"><img src="images/turkce.png" width="50" style="margin-top: -5px;" alt=""> Turkish</a>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="homePageEN.html">Home Page</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cvEN.html">CV (Curriculum Vitae)</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="portfolioEN.html">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="articlesEN.html">Articles</a>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
 <br>
 <center>
 <div class="alert alert-light" role="alert">
@@ -153,5 +187,6 @@
 </center>
 </body>
 </html>
+
 
 
