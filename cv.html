@@ -4,237 +4,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <title> MA ULUDAG | CV</title>
+    <title>MA ULUDAG | CV</title>
 </head>
 <body>
+<style>
+    .selected{color:black;} .act{color:rgb(0,110,255);} .notselected{color:#202020;}
+    .icon{color:#555;cursor:pointer;margin:1%;text-decoration:none;} .icon:hover{color:rgb(0,110,255);}    
+    .name{letter-spacing:1px;font-family:Arial;font-size:medium;animation:name-animation 6s;}
+    @keyframes name-animation{from{letter-spacing:10px;font-size:large;}to{letter-spacing:1px;font-size:medium;}}
+</style>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">MERT ALİ ULUDAĞ</a>
+    </div>
+</nav>
+<br>
+<center>
+<div class="alert alert-light" role="alert">
+    <div>
+        <img src="images/Resim1.png" alt="mert ali uludağ" style="border-radius:25%;width:50%;max-width:300px;box-shadow:0 0 7px rgba(0,0,0,0.18)">
+        <div style="height:50px;"><p class="name">MERT ALİ ULUDAĞ</p></div>
+    </div>
 
-    <style>
-        .selected{
-            color: black;
-        }
-
-        .act{
-            color: rgb(0, 110, 255);
-        }
-
-        .notselected{
-            color: rgb(32, 32, 32);
-        }
-
-        .icon{
-            color: rgb(85, 85, 85);
-            cursor: pointer;
-            margin: 1%;
-            text-decoration: none;
-        }
-
-        .icon:hover{
-            color: rgb(0, 110, 255);
-        }
-
-
-        .name {
-            letter-spacing: 1px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: medium;
-            animation-name: name-animation;
-            animation-duration: 6s;
-            }
-
-        @keyframes name-animation {
-            from {letter-spacing: 10px; font-size: large;}
-            to {letter-spacing: 1px; font-size: medium;}
-        }
-    </style>
-        
-        <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">MERT ALİ ULUDAĞ</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" id="navjsonclick" style="--bs-scroll-height: 150px;">
-                <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="articles.html">ARTICLES</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link act" href="cv.html">CV</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="portfolio.html" role="button" aria-expanded="false">
-                    PORTFOLIO
-                </a>
-                </li>
-                </li>
-            </ul>
-            </div>
+    <br>
+    <nav>
+        <div class="nav nav-tabs" style="width:50%;">
+            <button class="nav-link notselected active" data-bs-toggle="tab" data-bs-target="#personal">Personal & Contacts</button>
+            <button class="nav-link notselected" data-bs-toggle="tab" data-bs-target="#experience">Experiences</button>
+            <button class="nav-link notselected" data-bs-toggle="tab" data-bs-target="#skills">Skills</button>
+            <button class="nav-link notselected" data-bs-toggle="tab" data-bs-target="#education">Education</button>
+            <button class="nav-link notselected" data-bs-toggle="tab" data-bs-target="#courses">Courses</button>
+            <button class="nav-link notselected" data-bs-toggle="tab" data-bs-target="#projects">Projects</button>
+            <button class="nav-link notselected" data-bs-toggle="tab" data-bs-target="#hobbies">Hobbies</button>
         </div>
-        </nav>
-        <br>
-        <center>
-            <div class="alert alert-light" role="alert">
-                <div>
-                    <img src="images/Resim1.png" alt="mert ali uludağ" style="border-radius: 25%; width: 50%; max-width: 300px; box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.185)">
-                    <br> <div style="height: 50px;"> <br>
-                        <p class="name">MERT ALİ ULUDAĞ</p>
-                    </div>
-                </div>
-                <br>
-                <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist" style="width: 50%;">
-                      <button class="nav-link notselected active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-personal" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Personal&Contacts</button>
-                      <button class="nav-link notselected" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-experience" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Experiences</button>
-                      <button class="nav-link notselected" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-skills" type="button" role="tab" aria-controls="nav-skills" aria-selected="false">Skills</button>
-                      <button class="nav-link notselected" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-edu" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Education</button>
-                      <button class="nav-link notselected" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-courses" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Courses</button>
-                      <button class="nav-link notselected" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-hobies" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Hobies</button>
-                    </div>
-                  </nav>
-                  <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-personal" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                        <br>
-                        <i class="bi bi-geo-alt-fill"></i> Istanbul/Turkey <br> <br>
-                        <i class="bi bi-geo-alt-fill"></i> Nicosia/Cyprus <br>
-                        <br>
-                        Birth Year: 1999 · Istanbul <br><br>
-                        <a href="mailto:mertaliuludag@gmail.com" class="icon">mertaliuludag@gmail.com</a> <br><br>
-                        <a href="https://www.linkedin.com/in/mert-ali-uludag/" style="text-decoration: none;"><i class="bi bi-linkedin icon"> Linkedin</i></a>  <a href="https://github.com/merttali" style="text-decoration: none;"><i class="bi bi-github icon"> Github</i></a>
-                    </div>
-                    <div class="tab-pane fade" id="nav-experience" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                        <br>
-                        <a href="https://neareasttechnology.com/"><img src="https://neareasttechnology.com/templates/neareasttechnology/imgs/header-logo.svg" alt="Near East Technology" style="width: 10%;"></a> <br>
-                        <br>INFORMATION TECHNOLOGY BUSINESS ANALYST <br>
-                        March 2022 - Present · Nicosia, Cyprus <br><br>
-                        <p style="text-align: justify; width: 50%; word-wrap: break-word;">
-                            * UI design creation by Whimsical and Miro. (I'm designing a User Interface that can be built using Bootstrap.) 
-                            <br>* Analysing customer requirements and writing the analysis documents. 
-                            <br>* Writing test scenarios. 
-                            <br>* UX testing. 
-                            <br>* Creating workflows. 
-                            <br>* Managing customer realities. 
-                            <br>* Supporting users. 
-                            <br>* Writing user guides for applications. 
-                            <br>
-                            <br>Projects: 
-                            <br>
-                            <br>NETPOS Stock Inventory System 
-                            <br>Client: Near East Schools 
-                            <br>
-                            <br>MINIMUS 
-                            <br>Client: Near East Schools 
-                            <br>
-                            <br>Electronic Documentation Management System 
-                            <br>Client: Near East Group Companies
-                        </p><br>
-                        <br>
-                        <a href="https://www.dip.com.tr/"><img src="https://www.dip.com.tr/wp-content/uploads/2018/11/dip_logo_veriambari.png" alt="DIP Consulting" style="width: 10%;"></a> <br>
-                        <br>INFORMATION TECHNOLOGY BUSINESS ANALYST INTERN<br>
-                        July 2021 - March 2022 · Istanbul, Turkey <br><br>
-                        <p style="text-align: justify; width: 50%; word-wrap: break-word;">
-                            * Designing the User Interface.
-                            <br>* Analysing customer requirements and writing the analysis documents.
-                            <br>* Writing test scenarios.
-                            <br>* UX testing.
-                            <br>* Creating workflows.
-                            <br>* Managing customer relations.
-                            <br>* Supporting users.
-                            <br>* Writing user guides for applications.
-                            <br>
-                            <br>Projects:
-                            <br>
-                            <br>User Experience Database Project
-                            <br>Client: Turkish Airlines
-                            <br>
-                            <br>The Central Bank of the Republic of Turkey Periodic Report Submission Project
-                            <br>Client: Türkiye Finance Participation Bank
-                            <br>
-                            <br>Insurance Information and Monitoring Center Periodic Report Submission Project
-                            <br>Client: Bupa Acıbadem Insurance
-                        </p><br>
-                        <a href="https://www.vakifbank.com.tr/"><img src="data:image/png;base64,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" alt="fBank" style="width: 10%;"></a> <br>
-                        <br>INTERN<br>
-                        Agust 2019 - September 2019 · Istanbul, Turkey <br><br>
-                        
-                    </div>
-                    <div class="tab-pane fade" id="nav-skills" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                        <br>
-                        <div style="width: 50%;">
-                            <ul style="width: 25%; text-align: left; float: left;">
-                                <li>SQL</li>
-                                <li>Python</li>
-                                <li>JavaScript</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                            <ul style="width: 25%; text-align: left; float: right;">
-                                <li>Whimsical</li>
-                                <li>Miro</li>
-                                <li>MS Office</li>
-                                <li>Canva</li>
-                                <li>Adobe Illustrator</li>
-                                <li>Flowgorithm</li>
-                            </ul> 
-                        </div>
-                        <br>
-                        
-                        
-                    </div>
-                    <div class="tab-pane fade" id="nav-edu" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                        <br><br>
-                        <a style="background-color: rgb(51, 51, 51); padding: 2%; border-radius: 5px;" href="https://www.anadolu.edu.tr/en"><img src="https://www.anadolu.edu.tr/assets/img/headerLogoWhite_tr.png" alt="Near East Technology" style="width: 10%;"></a> <br>
-                        <br>Anatolian University<br>
-                        <br> Computer Programming <br>
-                        2022 - Present · Remote<br><br>
-                        <br>
-                        <a href="https://www.ogu.edu.tr/"><img src="https://www.ogu.edu.tr/Content/2019/img/site-logo-outlined.png" alt="Near East Technology" style="width: 10%;"></a> <br>
-                        Eskisehir Osmangazi University<br>
-                        <br> Economics <br>
-                        2017 - 2021 · Eskisehir, Turkey<br><br>
-                        Student Clubs
-                        <br>
-                        *Business And Economics Club (Board Member) <br>
-                        *AKUT Club <br>
-                        *Scout Club <br>
+    </nav>
 
-                        <br>
-                        
-                        
-                        
-                    </div>
+    <div class="tab-content" style="margin-top:20px;">
 
-                    <div class="tab-pane fade" id="nav-courses" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                        <br><br>
-                        <ul style="width: 50%; text-align: left;">
-                            <li>Big Data And Business Analysing, 3 Monts,(KUGIM)</li>
-                            <li>Developing Algorithms (Udemy)</li>
-                            <li>SWOT Analysing (ESOGU Business and Economics Club)</li>
-                            <li>Business Healty And Security (IIENSTITU)</li>
-                            <li>Project Writing (Eskisehir Youth Center)</li>
-                        </ul>
+        <!-- PERSONAL -->
+        <div class="tab-pane fade show active" id="personal">
+            <i class="bi bi-geo-alt-fill"></i> Istanbul, Turkey <br><br>
+            Birth Year: 1999 · Istanbul <br><br>
+            <a href="https://www.linkedin.com/in/mert-ali-uludag/" class="icon">LinkedIn</a>
+            <a href="https://github.com/merttali" class="icon">GitHub</a>
+            <a href="https://merttali.github.io/mertaliuludag" class="icon">Website</a>
+            <br><br>
+            <b>Languages:</b> Turkish (Native), English (Fluent)
+        </div>
 
-                        <br>
-                    </div>
-                    <div class="tab-pane fade" id="nav-hobies" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                        <br><br>
-                        <ul style="width: 50%; text-align: left;">
-                            <li>Guitar</li>
-                            <li>Cycling</li>
-                            <li>Camping and Trekking</li>
-                            <li>Drawing</li>
-                        </ul>
+        <!-- EXPERIENCE -->
+        <div class="tab-pane fade" id="experience">
+            <br>
+            <a href="https://neareasttechnology.com/"><img src="https://neareasttechnology.com/templates/neareasttechnology/imgs/header-logo.svg" alt="Near East Technology" style="width: 10%;"></a> <br>
+            <h4>IQB Solutions – IT Business & System Analyst</h4>
+            <p>Oct 2023 – Present · Istanbul, Turkey</p>
+            <p style="width:60%;text-align:justify;">
+                Requirements analysis, documentation, UI/UX prototyping (Miro, Axure RP), analysis diagrams,
+                Jira task creation, test management, SQL reporting, database design, integration tasks,
+                scheduled jobs, Adobe Acrobat templates, user manuals, version planning, product development
+                across 16 clients and 12 variations.
+            </p><br>
 
-                        <br>
-                    </div>
-            </div>
-        </center>
-    </body>
-    </html>
+            <h4>Near East Technology – IT Business & System Analyst</h4>
+            <p>Mar 2022 – Aug 2023 · Nicosia, Cyprus</p>
+            <p style="width:60%;text-align:justify;">
+                Requirements analysis, documentation, prototypes (Miro, Whimsical), manual testing,
+                test scenarios, user guides, version planning and deployment.
+            </p><br>
+
+            <h4>DIP Consulting – IT Business & System Analyst (Intern)</h4>
+            <p>Jul 2021 – Mar 2022 · Istanbul, Turkey</p>
+            <p style="width:60%;text-align:justify;">
+                Manual testing, analysis documentation, test scenarios, requirements analysis,
+                reporting SQL queries, version planning.
+            </p><br>
+
+            <h4>VakıfBank – Bank Staff (Intern)</h4>
+            <p>Aug 2019 – Oct 2019 · Istanbul, Turkey</p>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="tab-pane fade" id="skills">
+            <ul style="width:40%;text-align:left;">
+                <li>SQL</li><li>Python</li><li>JavaScript</li><li>HTML</li><li>CSS</li>
+                <li>Trello</li><li>Jira</li><li>Postman</li><li>Miro</li><li>Whimsical</li>
+                <li>Axure RP</li><li>MS Office</li><li>Adobe Illustrator</li>
+                <li>Canva</li><li>DataGrip</li><li>DBeaver</li><li>TeamCity</li>
+            </ul>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="tab-pane fade" id="education">
+            <h4>Eskisehir Osmangazi University</h4>
+            Economics – Bachelor's Degree (2017–2021)<br><br>
+
+            <h4>Volunteer Works</h4>
+            * Business & Economics Club – Design & Social Media Coordinator, Board Member (2017–2020)<br>
+            * AKUT Community – Volunteer (2017–2020)<br>
+        </div>
+
+        <!-- COURSES -->
+        <div class="tab-pane fade" id="courses">
+            <ul style="width:50%;text-align:left;">
+                <li>Introduction to AI – Global AI Hub</li>
+                <li>SQL Training – DIP Consulting</li>
+                <li>Big Data & Business Analysis – KUGIM</li>
+                <li>Algorithm Development – Udemy</li>
+                <li>SWOT Analysis – Business & Economics Club</li>
+                <li>Business Health & Safety – IIENSTITU</li>
+                <li>Project Documentation – Eskisehir Youth Center</li>
+            </ul>
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="tab-pane fade" id="projects">
+            <ul style="width:70%;text-align:left;">
+                <li><b>UTILON DCC – Electricity Distribution Management System</b></li>
+                <li><b>NETPOS – Stock & Inventory Management System</b></li>
+                <li><b>MINIMUS – School Management System</b></li>
+                <li><b>EnVision – Electronic Document Management System</b></li>
+                <li><b>Turkish Airlines – CRM Database Project</b></li>
+                <li><b>Türkiye Finans Bank – CBRT Reporting</b></li>
+                <li><b>BUPA Acıbadem – Insurance Reporting</b></li>
+                <li><b>Donkey – Car Sharing Application</b></li>
+            </ul>
+        </div>
+
+        <!-- HOBBIES -->
+        <div class="tab-pane fade" id="hobbies">
+            <ul style="width:50%;text-align:left;">
+                <li>Playing Guitar</li>
+                <li>Drawing</li>
+                <li>Painting</li>
+                <li>Camping</li>
+                <li>Cycling</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+</center>
 </body>
 </html>
